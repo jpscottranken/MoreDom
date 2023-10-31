@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!--	Begin <header> section	-->
+      <nav>
+        <div class="navigation-bar">
+          <ul>
+            <li><a href="bmiAbout.html">BMIAbout</a></li>
+            <li><a href="ggAbout.html">GGAbout</a></li>
+            <li><a href="bmi.html">BMI</a></li>
+            <li><a href="game.html">Game</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--	End   <header> section	-->
+
+    <main>
+      <!--	Begin <main> section	-->
+      <h1 class="guessHeader">Guessing Game</h1>
+
+      <div id="guessFormDiv">
+        <form class="form" method="get" action="">
+          <label class="guessLabel" for="guess">Guess: </label>
+          <input
+            type="number"
+            name="guess"
+            id="guess"
+            min="1"
+            max="100"
+            class="guessTextBox"
+          />
+          <span class="guessSpan">*</span><br /><br />
+
+          <input
+            type="button"
+            value="Make Guess"
+            name="makeGuess"
+            id="makeGuess"
+          />
+
+          <input
+            type="button"
+            value="Clear Form"
+            name="clearForm"
+            id="clearForm"
+          />
+
+          <input
+            type="button"
+            value="New Game"
+            name="newGame"
+            id="newGame"
+          /><br /><br />
+
+          <label class="guessLabel">Guess Status:</label>
+          <input
+            type="text"
+            name="guessStatus"
+            id="guessStatus"
+            class="guessTextBox"
+            disabled
+          /><br /><br />
+
+          <label class="guessLabel">Total Guesses:</label>
+          <input
+            type="text"
+            name="totalGuesses"
+            id="totalGuesses"
+            class="guessTextBox"
+            disabled
+          /><br />
+        </form>
+      </div>
+      <br /><br />
+      <div id="gameStatusPicture"></div>
+    </main>
+    <!--	End   <main> section	-->
+
+    <footer class="footer">
+      <!--	Begin <footer> section	-->
+      <div>&copy; 2023 Ranken Technical College - AWD Program</div>
+    </footer>
+    <!--	End   <footer> section	-->
+
+    <script type="text/javascript" src="js/game.js"></script>
+  </body>
+</html>

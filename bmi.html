@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BMI</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/calcBMI.js"></script>
+  </head>
+  <body>
+    <header>
+      <!--	Begin <header> section	-->
+      <nav>
+        <div class="navigation-bar">
+          <div id="navigation-container">
+            <ul>
+              <li><a href="bmiAbout.html">BMIAbout</a></li>
+              <li><a href="ggAbout.html">GGAbout</a></li>
+              <li><a href="bmi.html">BMI</a></li>
+              <li><a href="game.html">Game</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--	End <header> section	-->
+
+    <main class="bmi">
+      <h1 class="bmiHeader">BMI Calculator</h1>
+
+      <div id="bmiFormDiv">
+        <form class="form" method="get" action="">
+          <label class="bmiLabel" for="height">Height: </label>
+          <input
+            type="number"
+            min="12"
+            max="96"
+            name="height"
+            id="height"
+            class="bmiTextBox"
+          />
+          <span id="herror" class="bmiSpan">* </span><br /><br />
+
+          <label class="bmiLabel" for="weight">Weight: </label>
+          <input
+            type="number"
+            min="1"
+            max="777"
+            name="weight"
+            id="weight"
+            class="bmiTextBox"
+          />
+          <span id="werror" class="bmiSpan">* </span><br /><br />
+
+          <input
+            type="button"
+            value="Calculate"
+            name="calculate"
+            id="calculate"
+          />
+
+          <input
+            type="button"
+            value="Reset Form"
+            name="clear"
+            id="clear"
+          /><br /><br />
+
+          <label class="bmiLabel">BMI:</label>
+          <input
+            type="text"
+            id="result"
+            class="bmiTextBox"
+            disabled
+          /><br /><br />
+
+          <label class="bmiLabel">Status:</label>
+          <input type="text" id="status" class="bmiTextBox" disabled /><br />
+        </form>
+      </div>
+      <br /><br />
+      <div id="weightStatusPicture"></div>
+    </main>
+
+    <footer class="footer">
+      <div>&copy; 2023 Ranken Technical College - AWD Program</div>
+    </footer>
+  </body>
+</html>
